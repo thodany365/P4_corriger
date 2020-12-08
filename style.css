@@ -7,10 +7,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.p{
-    font-size: 23px;
-    color: #000000;
-}
 a,
 button {
     transition: all .3s ease-in-out;
@@ -137,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, 1);
 }
 
 .d-bloc .a-btn:hover,
@@ -154,7 +150,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -199,7 +195,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, 1);
 }
 
 .d-bloc .panel button:hover,
@@ -655,7 +651,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000000;
 }
 
 .container {
@@ -681,7 +677,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -784,14 +780,20 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
     color: #FFFFFF!important;
 }
-
+.btn-atomic-tangerine:focus {
+    background: #c27956!important;
+    color: #FFFFFF!important;
+}
+.ltc-black {
+    color: #000000!important;
+}
 .ltc-white {
     color: #FFFFFF!important;
 }
@@ -826,7 +828,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -1030,6 +1032,12 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .bg-banniere {
+        background-image: url("img/la-chouette-agence-banniere_ipad.jpg");
+    }
+    .bg-presentation {
+        background-image: url("img/image-de-presentation_ipad.jpg");
+    }
 }
 
 @media (max-width: 400px) {
@@ -1043,4 +1051,33 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+.partenaires {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white!important;
+}
+.partenaires ul {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    color: black!important;
+}
+@media (max-width: 500px) {
+    .partenaires ul {
+        flex-direction: column;
+    }
+    .partenaires li {
+        padding: 2%;
+    }
+    .bg-banniere {
+        background-image: url("img/la-chouette-agence-banniere_phone.jpg");
+    }
+    .bg-presentation {
+        background-image: url("img/image-de-presentation_phone.jpg");
+    }
+
 }
