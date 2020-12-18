@@ -402,11 +402,13 @@ a:hover {
         margin: 10px auto 0;
     }
 }
+
 .bloc-parlonsweb{
     background-color: #000000;
     color: #c27956;
 
 }
+
 .nav > li > .dropdown a {
     background: none!important;
     display: block;
@@ -681,7 +683,7 @@ a {
 }
 
 p {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .tight-width-whitespace {
