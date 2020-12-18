@@ -402,8 +402,10 @@ a:hover {
         margin: 10px auto 0;
     }
 }
-.parlonsweb{
+.bloc-parlonsweb{
     background-color: #000000;
+    color: #c27956;
+
 }
 .nav > li > .dropdown a {
     background: none!important;
